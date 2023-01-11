@@ -1,0 +1,202 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1;
+}
+
+/* Footer CSS Begins */
+footer {
+    width: 100%;
+    background-color: black;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+
+}
+
+.footer-lg {
+    color: #f2f2f2;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.footer-sm {
+    color: #f2f2f2;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.block {
+    border-color: red;
+    border-radius: 7px;
+    background-color: red;
+    padding: 7px;
+}
+
+.container {
+    width: 75%;
+}
+
+.post {
+    text-align: left;
+    font-size: 18px;
+    color: black;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.post-info {
+    text-align: right;
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    border-bottom: thin solid grey;
+}
+
+.comment-container {
+    width: 75%;
+    border: thin 0.5px grey;
+    padding: 15px;
+}
+
+.comment-info {
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+.post-container {
+    width: 500px;
+    margin: 70px auto;
+    padding: 10px;
+}
+
+#post_title {
+    width: 470px;
+    margin-bottom: 25px;
+    border: solid 0.5px grey;
+}
+
+textarea {
+    width: 470px;
+    border-radius: 7px;
+    border: solid 0.5px grey;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 7px;
+}
+
+/* Login and Sign Up */
+
+h1 {
+    font-size: 24px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    margin: 50px 0px 50px 0px;
+}
+
+.login-container {
+    width: 500px;
+    margin: auto;
+    padding: 10px;
+}
+
+.signup-container {
+    width: 500px;
+    margin: auto;
+    padding: 10px;
+}
+
+input[type=text],
+input[type=password] {
+    width: 470px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    box-sizing: border-box;
+}
+
+#newpost {
+    display: block;
+    margin: 20px auto;
+    background-color: #389F91;
+    color: black;
+    font-weight: bold;
+    padding: 14px 20px;
+    border: thin solid #389F91;
+    border-radius: 7px;
+    cursor: pointer;
+    width: 250px;
+}
+
+#login {
+    display: block;
+    margin: 20px auto;
+    background-color: #389F91;
+    color: black;
+    font-weight: bold;
+    padding: 14px 20px;
+    border: thin solid #389F91;
+    border-radius: 7px;
+    cursor: pointer;
+    width: 250px;
+}
+
+#signup {
+    display: block;
+    margin: 20px auto;
+    background-color: #389F91;
+    color: black;
+    font-weight: bold;
+    padding: 14px 20px;
+    border: thin solid #389F91;
+    border-radius: 7px;
+    cursor: pointer;
+    width: 250px;
+}
+
+#newpost:hover {
+    opacity: 0.8;
+}
+
+#login:hover {
+    opacity: 0.8;
+}
+
+#signup:hover {
+    opacity: 0.8;
+}
+
+.p-sm {
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.hplnk {
+    color: #389F91;
+    text-decoration: none;
+}
+
+.hplnk a:hover {
+    color: #389F91;
+    border: thin #389F91;
+    text-decoration: none;
+}
