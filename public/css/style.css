@@ -4,24 +4,95 @@ body {
     line-height: 1;
 }
 
-/* dashboard */
+/* fonts */
+h1 {
+    font-size: 24px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    margin: 50px 0px 50px 0px;
+}
 
 h2 {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
+    color: black;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+
+/* dashboard */
+.welcome-container {
+    width: 100%;
+    padding: 0;
+}
+
+.p-welcome {
+    font-size: 14px;
+    text-align: right;
+    font-weight: bold;
+    margin: 15px 0px 15px 0px;
     color: #389F91;
+}
+
+#delete-post {
+    background-color: #389F91;
+    color: white;
+    font-weight: bold;
+    padding: 3px;
+    border: thin solid #389F91;
+    border-radius: 7px;
+    cursor: pointer;
+    width: 120px;
+}
+
+#edit-post {
+    background-color: #389F91;
+    color: white;
+    font-weight: bold;
+    padding: 3px;
+    border: thin solid #389F91;
+    border-radius: 7px;
+    cursor: pointer;
+    width: 120px;
+}
+
+.new-post {
+    background-color: #389F91;
+    color: white;
+    font-weight: bold;
+    padding: 3px;
+    border: thin solid #389F91;
+    border-radius: 7px;
+    cursor: pointer;
+    width: 120px;
+    margin-top: 20px;
+}
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+.dashboard-item {
+    padding: 3px 0px 10px 0px;
 }
 
 /* Footer CSS Begins */
 footer {
     width: 100%;
     background-color: black;
-    margin-top: 25px;
+    margin-top: 50px;
     margin-bottom: 25px;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-
 }
 
 .footer-lg {
@@ -47,8 +118,10 @@ footer {
     padding: 7px;
 }
 
-.container {
-    width: 75%;
+.p-sm {
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
 }
 
 .post {
@@ -69,6 +142,11 @@ footer {
     border-bottom: thin solid grey;
 }
 
+.post-title {
+    font-weight: bold;
+}
+
+
 .comment-container {
     width: 75%;
     border: thin 0.5px grey;
@@ -83,22 +161,16 @@ footer {
     padding-bottom: 5px;
 }
 
-.post-container {
-    width: 500px;
-    margin: 70px auto;
-    padding: 10px;
-}
-
 #post_title {
     width: 470px;
-    margin-bottom: 25px;
     border: solid 0.5px grey;
 }
 
-textarea {
+#post_content {
     width: 470px;
     border-radius: 7px;
     border: solid 0.5px grey;
+    padding: 15px;
 }
 
 label {
@@ -109,14 +181,6 @@ label {
 }
 
 /* Login and Sign Up */
-
-h1 {
-    font-size: 24px;
-    color: black;
-    font-weight: bold;
-    text-align: center;
-    margin: 50px 0px 50px 0px;
-}
 
 .login-container {
     width: 500px;
@@ -145,19 +209,6 @@ input[type=password] {
     border: 1px solid #ccc;
     border-radius: 7px;
     box-sizing: border-box;
-}
-
-#newpost button {
-    display: block;
-    margin: 20px auto;
-    background-color: #389F91;
-    color: black;
-    font-weight: bold;
-    padding: 14px 20px;
-    border: thin solid #389F91;
-    border-radius: 7px;
-    cursor: pointer;
-    width: 250px;
 }
 
 #login {

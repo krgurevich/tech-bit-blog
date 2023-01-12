@@ -1,34 +1,38 @@
-<div class="container">
-    <h2>Welcome, {{username}}!</h2>
+<div class="welcome-container">
+    <p class="p-welcome">Welcome, {{username}}! &nbsp;<a href="/logout">Logout</a></p>
 </div>
 
 {{#if posts.length}}
-<p class="p-large">Your current blogs:</p>
+<h2>Manage Your Posts</h2>
 
 {{#each posts as |post|}}
-<div class="row mb-2">
-    <div class="col-md-8">
-        <h4><a href="/post/{{post.id}}">{{post.post_title}}</a></h4>
-    </div>
-    <div class="col-md-4">
-        <button id="delete-post" data-id="{{post.id}}">Delete</button>
+<div class="container">
+    <div class="row mb-2">
+        <div class="col-md-8">
+            <h4><a href="/post/{{post.id}}">{{post.post_title}}</a></h4>
+        </div>
+        <div class="col-md-4">
+            <button id="delete-post" data-id="{{post.id}}">Delete Post</button>
+            <button id="edit-post" data-id="{{post.id}}">Edit</button>
+        </div>
     </div>
 </div>
 {{/each}}
 </div>
 {{/if}}
 
-<div class="post-container">
-    <h1>Create New Post</h1>
-    <form id="newpost" onsubmit="newFormHandler(e)">
-        <label>Title</label>
-        <input type="text" required id="post_title">
-        <label>Content</label>
-        <textarea rows="7" required id="post_content"></textarea>
-        <button type="submit"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;New Post</button>
-    </form>
+<br>
+<div class="container">
+    <h2>Create New Post</h2>
+    <div class="col-8">
+        <form id="newpost" onsubmit="newFormHandler(e)">
+            <input type="text" required id="post_title" placeholder="Title">
+            <textarea rows="7" required id="post_content" placeholder="Content"></textarea>
+            <div class="col-4">
+            </div>
+            <button class="new-post" type="submit">Submit</button>
+        </form>
+    </div>
 </div>
-
-
 
 <script src="/js/dashboard.js"></script>
