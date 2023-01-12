@@ -4,6 +4,14 @@ body {
     line-height: 1;
 }
 
+/* dashboard */
+
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #389F91;
+}
+
 /* Footer CSS Begins */
 footer {
     width: 100%;
@@ -122,6 +130,12 @@ h1 {
     padding: 10px;
 }
 
+.new-comment-container {
+    width: 500px;
+    margin: auto;
+    padding: 10px;
+}
+
 input[type=text],
 input[type=password] {
     width: 470px;
@@ -133,7 +147,7 @@ input[type=password] {
     box-sizing: border-box;
 }
 
-#newpost {
+#newpost button {
     display: block;
     margin: 20px auto;
     background-color: #389F91;
@@ -160,6 +174,19 @@ input[type=password] {
 }
 
 #signup {
+    display: block;
+    margin: 20px auto;
+    background-color: #389F91;
+    color: black;
+    font-weight: bold;
+    padding: 14px 20px;
+    border: thin solid #389F91;
+    border-radius: 7px;
+    cursor: pointer;
+    width: 250px;
+}
+
+#newcomment {
     display: block;
     margin: 20px auto;
     background-color: #389F91;
