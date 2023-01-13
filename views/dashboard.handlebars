@@ -1,5 +1,5 @@
 <div class="welcome-container">
-    <p class="p-welcome">Welcome, {{username}}! &nbsp;<a href="/logout">Logout</a></p>
+    <p class="p-welcome">Welcome, {{username}}! &nbsp;<a id="/logout" href="/logout">Logout</a></p>
 </div>
 
 {{#if posts.length}}
@@ -12,8 +12,8 @@
             <h4><a href="/post/{{post.id}}">{{post.post_title}}</a></h4>
         </div>
         <div class="col-md-4">
-            <button id="delete-post" data-id="{{post.id}}">Delete Post</button>
-            <button id="edit-post" data-id="{{post.id}}">Edit</button>
+            <button id="delete-post" onclick="delButtonHandler(this)" data-id="{{post.id}}">Delete Post</button>
+            <button id="edit-post"><a href="/editpost/{{post.id}}">Edit Post</a></button>
         </div>
     </div>
 </div>

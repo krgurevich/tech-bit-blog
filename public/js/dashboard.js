@@ -22,9 +22,9 @@ const newFormHandler = async (event) => {
 };
 
 const delButtonHandler = async (event) => {
-  if (event.target.hasAttribute("data-id")) {
-    const id = event.target.getAttribute("data-id");
-
+  if (window.event.target.hasAttribute("data-id")) {
+    const id = window.event.target.getAttribute("data-id");
+    console.log(id);
     const response = await fetch(`/api/posts/${id}`, {
       method: "DELETE",
     });
@@ -38,11 +38,17 @@ const delButtonHandler = async (event) => {
 };
 
 const updateFormHandler = async (event) => {
-  if (event.target.hasAttribute("data-id")) {
-    const id = event.target.getAttribute("data-id");
-
+  window.event.preventDefault();
+  if (window.event.target.hasAttribute("data-id")) {
+    const id = window.event.target.getAttribute("data-id");
+    const post_title = document.querySelector("#post_title").value.trim();
+    const post_text = document.querySelector("#post_content").value.trim();
     const response = await fetch(`/api/posts/${id}`, {
       method: "PUT",
+      body: JSON.stringify({ post_title, post_text }),
+      headers: {
+        "Content-Type": "application/json",
+      },
     });
 
     if (response.ok) {
@@ -54,7 +60,3 @@ const updateFormHandler = async (event) => {
 };
 
 document.getElementById("newpost").addEventListener("submit", newFormHandler);
-document
-  .getElementById("delete-post")
-  .addEventListener("click", delButtonHandler);
-document.getElementById().addEventListener("click", updateFormHandler);

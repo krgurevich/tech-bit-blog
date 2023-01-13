@@ -92,7 +92,6 @@ footer {
     width: 100%;
     background-color: black;
     margin-top: 50px;
-    margin-bottom: 25px;
 }
 
 .footer-lg {
@@ -101,6 +100,7 @@ footer {
     font-weight: bold;
     text-align: center;
     padding-top: 20px;
+    height: 50px;
 }
 
 .footer-sm {
@@ -237,7 +237,7 @@ input[type=password] {
     width: 250px;
 }
 
-#newcomment {
+#new-comment {
     display: block;
     margin: 20px auto;
     background-color: #389F91;

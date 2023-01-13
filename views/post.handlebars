@@ -2,32 +2,36 @@
     <div class="post">
         <p class="post-title">
             <i class="fa fa-sticky-note" aria-hidden="true"
-                style="font-size: 20px; color: #389f91"></i>&nbsp;{{post.post_title}}
+                style="font-size: 20px; color: #389f91"></i>&nbsp;{{post_title}}
         </p>
-        <p class="post-content">{{post.post_text}}</p>
+        <p class="post-content">{{post_text}}</p>
     </div>
     <div class="post-info">
         <i class="fa fa-user-circle-o" aria-hidden="true" style="font-size: 20px; color: #389f91"></i>&nbsp;&nbsp;Posted
         By
         {{user.username}}
         on
-        {{format_date post.date_created}}
+        {{format_date date_created}}
     </div>
+    {{#if comments.length}}
+    {{#each comments as |comment|}}
+    <div class="comment-container">
+
+        <div class="comment-info">Posted by
+            {{user.username}}
+            on
+            {{format_date comment.date_created}}&nbsp;<i class="fa fa-comment" aria-hidden="true"
+                style="font-size: 20px; color: #389f91"></i>
+        </div>
+        <div class="comment">{{comment.comment_text}}</div>
+    </div>
+    {{/each}}
+    {{/if}}
 </div>
 {{#if logged_in}}
-<form class="newcomment-container" data-post={{id}}>
-    <textarea rows="7" required id="comment_text" placeholder="Comment on this post here"></textarea>
-    <button id="newcomment" type="submit">Submit Comment</button>
+<form id="new-comment-container" data-id="{{id}}">
+    <textarea rows="7" required id="comment_text" placeholder="Comment"></textarea>
+    <button id="new-comment" type="submit">Submit Comment</button>
 </form>
 {{/if}}
-<div class="comment-container">
-    <div class="comment-info">Posted by
-        {{user.username}}
-        on
-        {{format_date comment.date_created}}&nbsp;<i class="fa fa-comment" aria-hidden="true"
-            style="font-size: 20px; color: #389f91"></i>
-    </div>
-    <div class="comment">{{comment.comment_}}</div>
-</div>
-
 <script src="/js/comments.js"></script>
