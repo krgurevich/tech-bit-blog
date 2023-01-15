@@ -1,3 +1,4 @@
+{{!-- dashboard to manage and create new posts --}}
 <div class="welcome-container">
     <p class="p-welcome">Welcome, {{username}}!</p>
 </div>
@@ -27,7 +28,7 @@
     <div class="col-8">
         <form id="newpost" onsubmit="newFormHandler(e)">
             <input type="text" required id="post_title" placeholder="Title">
-            <textarea rows="10" col="150" required id="post_content" placeholder="Content"></textarea>
+            <textarea rows="7" cols="300" required id="post_content" placeholder="Content"></textarea>
             <div class="col-4">
             </div>
             <button class="new-post" type="submit">Submit</button>

@@ -1,8 +1,9 @@
+{{!-- edit an existing post --}}
 <div class="edit-container">
     <h1>Edit Post</h1>
     <form id="edit-form" data-id="{{id}}" onsubmit="updateFormHandler(this)">
         <input type="text" required value="{{post_title}}" id="post_title" placeholder="Title">
-        <textarea rows="10" col="150" required id="post_content" placeholder="Content">{{post_text}}</textarea>
+        <textarea rows="7" col="300" required id="post_content" placeholder="Content">{{post_text}}</textarea>
         <button class="edit-button" type="submit">Save Post</button>
     </form>
 </div>

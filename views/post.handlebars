@@ -1,3 +1,4 @@
+{{!-- View a specific post and apply comments --}}
 <div class="container">
     <div class="post">
         <p class="post-title">
@@ -29,7 +30,7 @@
 </div>
 {{#if logged_in}}
 <form id="new-comment-container" data-id="{{id}}">
-    <textarea rows="10" col="150" required id="comment_text" placeholder="Comment"></textarea>
+    <textarea rows="7" col="300" required id="comment_text" placeholder="Comment"></textarea>
     <button id="new-comment" type="submit">Submit Comment</button>
 </form>
 {{/if}}

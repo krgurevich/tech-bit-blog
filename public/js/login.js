@@ -1,3 +1,4 @@
+// Login Form
 const loginFormHandler = async (event) => {
   // Prevents the browser from submitting the form
   event.preventDefault();

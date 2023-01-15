@@ -1,3 +1,4 @@
+// New Post
 const newFormHandler = async (event) => {
   event.preventDefault();
 
@@ -20,7 +21,7 @@ const newFormHandler = async (event) => {
     }
   }
 };
-
+// Delete Post
 const delButtonHandler = async (event) => {
   if (window.event.target.hasAttribute("data-id")) {
     const id = window.event.target.getAttribute("data-id");
@@ -36,7 +37,7 @@ const delButtonHandler = async (event) => {
     }
   }
 };
-
+// Update new post
 const updateFormHandler = async (event) => {
   window.event.preventDefault();
   if (window.event.target.hasAttribute("data-id")) {

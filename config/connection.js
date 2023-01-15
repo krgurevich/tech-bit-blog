@@ -1,3 +1,4 @@
+// Connections linked to dotenv
 const Sequelize = require("sequelize");
 require("dotenv").config();
 
