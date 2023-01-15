@@ -1,5 +1,5 @@
 <div class="welcome-container">
-    <p class="p-welcome">Welcome, {{username}}! &nbsp;<a id="/logout" href="/logout">Logout</a></p>
+    <p class="p-welcome">Welcome, {{username}}!</p>
 </div>
 
 {{#if posts.length}}
@@ -9,7 +9,7 @@
 <div class="container">
     <div class="row mb-2">
         <div class="col-md-8">
-            <h4><a href="/post/{{post.id}}">{{post.post_title}}</a></h4>
+            <h3><a href="/post/{{post.id}}">{{post.post_title}}</a></h3>
         </div>
         <div class="col-md-4">
             <button id="delete-post" onclick="delButtonHandler(this)" data-id="{{post.id}}">Delete Post</button>
@@ -27,7 +27,7 @@
     <div class="col-8">
         <form id="newpost" onsubmit="newFormHandler(e)">
             <input type="text" required id="post_title" placeholder="Title">
-            <textarea rows="7" required id="post_content" placeholder="Content"></textarea>
+            <textarea rows="10" col="150" required id="post_content" placeholder="Content"></textarea>
             <div class="col-4">
             </div>
             <button class="new-post" type="submit">Submit</button>

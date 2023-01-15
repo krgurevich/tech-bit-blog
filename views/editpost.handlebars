@@ -1,14 +1,10 @@
-<div class="container">
-    <h2>Edit Post</h2>
-    <div class="col-8">
-        <form id="edit-post" data-id="{{id}}" onsubmit="updateFormHandler(this)">
-            <input type="text" required value="{{post_title}}" id="post_title" placeholder="Title">
-            <textarea rows="7" required id="post_content" placeholder="Content">{{post_text}}</textarea>
-            <div class="col-4">
-            </div>
-            <button class="new-post" type="submit">Submit</button>
-        </form>
-    </div>
+<div class="edit-container">
+    <h1>Edit Post</h1>
+    <form id="edit-form" data-id="{{id}}" onsubmit="updateFormHandler(this)">
+        <input type="text" required value="{{post_title}}" id="post_title" placeholder="Title">
+        <textarea rows="10" col="150" required id="post_content" placeholder="Content">{{post_text}}</textarea>
+        <button class="edit-button" type="submit">Save Post</button>
+    </form>
 </div>
 
 <script src="/js/dashboard.js"></script>

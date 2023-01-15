@@ -21,6 +21,12 @@ h2 {
     margin-top: 25px;
 }
 
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+
 /* homepage */
 .post {
     text-align: left;
@@ -40,12 +46,8 @@ h2 {
     border-bottom: thin solid grey;
 }
 
-.post-title {
-    font-weight: bold;
-}
-
 .comment-container {
-    width: 75%;
+    width: 100%;
     border: thin 0.5px grey;
     padding: 15px;
 }
@@ -70,10 +72,21 @@ h2 {
     padding: 15px;
 }
 
-.new-comment-container {
-    width: 500px;
+.post-content {
+    margin: 15px 0px 15px 0px;
+}
+
+#new-comment-container {
+    width: 100%;
     margin: auto;
     padding: 10px;
+}
+
+#comment_text {
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 #new-comment {
@@ -86,7 +99,6 @@ h2 {
     border: thin solid #389F91;
     border-radius: 7px;
     cursor: pointer;
-    width: 250px;
 }
 
 .p-sm {
@@ -131,6 +143,11 @@ h2 {
     width: 120px;
 }
 
+#edit-form {
+    width: 550px;
+    margin: auto;
+}
+
 #edit-post {
     background-color: #389F91;
     color: white;
@@ -142,7 +159,41 @@ h2 {
     width: 120px;
 }
 
+.edit-button {
+    background-color: #389F91;
+    color: white;
+    font-weight: bold;
+    padding: 3px;
+    border: thin solid #389F91;
+    border-radius: 7px;
+    cursor: pointer;
+    width: 120px;
+    margin: 25px auto;
+}
+
+#edit-post a {
+    color: white;
+    text-decoration: none;
+}
+
 .new-post {
+    background-color: #389F91;
+    color: white;
+    font-weight: bold;
+    padding: 3px;
+    border: thin solid #389F91;
+    border-radius: 7px;
+    cursor: pointer;
+    width: 120px;
+    margin-top: 20px;
+}
+
+.edit-container {
+    width: 100%;
+    margin: auto;
+}
+
+.edit-post {
     background-color: #389F91;
     color: white;
     font-weight: bold;
