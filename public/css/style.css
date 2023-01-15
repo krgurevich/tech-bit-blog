@@ -21,10 +21,89 @@ h2 {
     margin-top: 25px;
 }
 
-h4 {
-    font-size: 16px;
-    font-weight: bold;
+/* homepage */
+.post {
+    text-align: left;
+    font-size: 18px;
     color: black;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.post-info {
+    text-align: right;
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    border-bottom: thin solid grey;
+}
+
+.post-title {
+    font-weight: bold;
+}
+
+.comment-container {
+    width: 75%;
+    border: thin 0.5px grey;
+    padding: 15px;
+}
+
+.comment-info {
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+#post_title {
+    width: 470px;
+    border: solid 0.5px grey;
+}
+
+#post_content {
+    width: 470px;
+    border-radius: 7px;
+    border: solid 0.5px grey;
+    padding: 15px;
+}
+
+.new-comment-container {
+    width: 500px;
+    margin: auto;
+    padding: 10px;
+}
+
+#new-comment {
+    display: block;
+    margin: 20px auto;
+    background-color: #389F91;
+    color: black;
+    font-weight: bold;
+    padding: 14px 20px;
+    border: thin solid #389F91;
+    border-radius: 7px;
+    cursor: pointer;
+    width: 250px;
+}
+
+.p-sm {
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.hplnk {
+    color: #389F91;
+    text-decoration: none;
+}
+
+.hplnk a:hover {
+    color: #389F91;
+    border: thin #389F91;
+    text-decoration: none;
 }
 
 /* dashboard */
@@ -75,6 +154,10 @@ h4 {
     margin-top: 20px;
 }
 
+#newpost:hover {
+    opacity: 0.8;
+}
+
 a:link {
     color: black;
 }
@@ -85,6 +168,71 @@ a:visited {
 
 .dashboard-item {
     padding: 3px 0px 10px 0px;
+}
+
+/* Login and Sign Up */
+.login-container {
+    width: 500px;
+    margin: auto;
+    padding: 10px;
+}
+
+.signup-container {
+    width: 500px;
+    margin: auto;
+    padding: 10px;
+}
+
+input[type=text],
+input[type=password] {
+    width: 470px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    box-sizing: border-box;
+}
+
+#login {
+    display: block;
+    margin: 20px auto;
+    background-color: #389F91;
+    color: black;
+    font-weight: bold;
+    padding: 14px 20px;
+    border: thin solid #389F91;
+    border-radius: 7px;
+    cursor: pointer;
+    width: 250px;
+}
+
+#login:hover {
+    opacity: 0.8;
+}
+
+#signup {
+    display: block;
+    margin: 20px auto;
+    background-color: #389F91;
+    color: black;
+    font-weight: bold;
+    padding: 14px 20px;
+    border: thin solid #389F91;
+    border-radius: 7px;
+    cursor: pointer;
+    width: 250px;
+}
+
+#signup:hover {
+    opacity: 0.8;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 7px;
 }
 
 /* Footer CSS Begins */
@@ -122,159 +270,4 @@ footer {
     font-size: 14px;
     text-align: center;
     font-weight: bold;
-}
-
-.post {
-    text-align: left;
-    font-size: 18px;
-    color: black;
-    margin-bottom: 25px;
-    margin-top: 25px;
-}
-
-.post-info {
-    text-align: right;
-    font-size: 14px;
-    color: black;
-    font-weight: bold;
-    padding-top: 15px;
-    padding-bottom: 5px;
-    border-bottom: thin solid grey;
-}
-
-.post-title {
-    font-weight: bold;
-}
-
-
-.comment-container {
-    width: 75%;
-    border: thin 0.5px grey;
-    padding: 15px;
-}
-
-.comment-info {
-    font-size: 14px;
-    color: black;
-    font-weight: bold;
-    padding-top: 15px;
-    padding-bottom: 5px;
-}
-
-#post_title {
-    width: 470px;
-    border: solid 0.5px grey;
-}
-
-#post_content {
-    width: 470px;
-    border-radius: 7px;
-    border: solid 0.5px grey;
-    padding: 15px;
-}
-
-label {
-    display: block;
-    font-weight: bold;
-    font-size: 16px;
-    margin-bottom: 7px;
-}
-
-/* Login and Sign Up */
-
-.login-container {
-    width: 500px;
-    margin: auto;
-    padding: 10px;
-}
-
-.signup-container {
-    width: 500px;
-    margin: auto;
-    padding: 10px;
-}
-
-.new-comment-container {
-    width: 500px;
-    margin: auto;
-    padding: 10px;
-}
-
-input[type=text],
-input[type=password] {
-    width: 470px;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 7px;
-    box-sizing: border-box;
-}
-
-#login {
-    display: block;
-    margin: 20px auto;
-    background-color: #389F91;
-    color: black;
-    font-weight: bold;
-    padding: 14px 20px;
-    border: thin solid #389F91;
-    border-radius: 7px;
-    cursor: pointer;
-    width: 250px;
-}
-
-#signup {
-    display: block;
-    margin: 20px auto;
-    background-color: #389F91;
-    color: black;
-    font-weight: bold;
-    padding: 14px 20px;
-    border: thin solid #389F91;
-    border-radius: 7px;
-    cursor: pointer;
-    width: 250px;
-}
-
-#new-comment {
-    display: block;
-    margin: 20px auto;
-    background-color: #389F91;
-    color: black;
-    font-weight: bold;
-    padding: 14px 20px;
-    border: thin solid #389F91;
-    border-radius: 7px;
-    cursor: pointer;
-    width: 250px;
-}
-
-#newpost:hover {
-    opacity: 0.8;
-}
-
-#login:hover {
-    opacity: 0.8;
-}
-
-#signup:hover {
-    opacity: 0.8;
-}
-
-.p-sm {
-    font-size: 14px;
-    text-align: center;
-    font-weight: bold;
-}
-
-.hplnk {
-    color: #389F91;
-    text-decoration: none;
-}
-
-.hplnk a:hover {
-    color: #389F91;
-    border: thin #389F91;
-    text-decoration: none;
 }
