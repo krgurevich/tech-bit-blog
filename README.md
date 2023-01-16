@@ -43,12 +43,14 @@ WHEN I am idle on the site for more than a set time
 THEN I am able to view comments but I am prompted to log in again before I can add, update, or delete comments
 
 ## License
+
 MIT License
 
 ## Links
 
 GitHub: https://github.com/krgurevich/tech-bit-blog
-Heroku:
+
+Heroku: https://tech-bit-blog.herokuapp.com/
 
 ## Screenshot
 
@@ -56,4 +58,5 @@ Heroku:
 
 ![website screenshot](/public/images/screenshot-1.png)
 ![website screenshot](/public/images/screenshot-2.png)
+![website screenshot](/public/images/screenshot-4.png)
 ![website screenshot](/public/images/screenshot-3.png)
